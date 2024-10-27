@@ -1,5 +1,12 @@
 // Написать функцию, которая принимает Iterable объект и функцию отображения и возвращает итератор,
 // который возвращает элементы, полученные с помощью функции отображения. Итератор должен создаваться с помощью генератора.
 
+function* map(itterable, fn) {
+	for (let el of itterable) {
+		yield fn(el)
+	}
+}
+
 // [2, 4, 6, 8]
-Array.from(map(new Set([1, 2, 3, 4]), el => el * 2))
+const arr = Array.from(map(new Set([1, 2, 3, 4]), el => el * 2))
+console.log(arr)
