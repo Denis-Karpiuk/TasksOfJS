@@ -1,4 +1,7 @@
 // Необходимо написать функцию, которая идентична Promise.allSettled.
+
+// Принимает итерабл объект, дожидается завершения всех промисов, возвращает массив объектов вида {status:"fulfilled",value: any } или {status:"rejected", reason: any}
+
 const allSettled = array =>
 	new Promise(resolve => {
 		const results = []
