@@ -6,7 +6,7 @@ let str2 = 'тест'
 //! Базовый вариант
 function isPolindrom(string) {
 	let arr = string.split('') // разбиваем строку на массив символов
-	// add comment
+	// add comment from first branch
 	let arrReverse = arr.reverse() // перерворачиваем массив
 	// добавлен комментарий в ветку one
 	let newString = arrReverse.join('') // склеиваем в новую строку
