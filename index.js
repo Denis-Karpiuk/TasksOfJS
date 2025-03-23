@@ -16,6 +16,8 @@ function isPolindrom(string) {
 	let newString = arrReverse.join('') // склеиваем в новую строку
 	let result = string === newString // срвниваем в новую строку
 	return result // возворащаем результат
+
+	// ratata
 }
 let x = isPolindrom(str1)
 console.log(x)
