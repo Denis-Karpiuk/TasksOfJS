@@ -8,7 +8,6 @@ function isPolindrom(string) {
 	let arr = string.split('') // разбиваем строку на массив символов
 	// let arr = string.split('') // разбиваем строку на массив символов
 
-	// add comment from second branch
 	let arrReverse = arr.reverse() // перерворачиваем массив
 	// добавлен комментарий в ветку one
 	let newString = arrReverse.join('') // склеиваем в новую строку
