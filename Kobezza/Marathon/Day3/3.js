@@ -4,14 +4,12 @@
 // Каррирование — это техника, при которой функция, принимающая несколько аргументов,
 // преобразуется в последовательность функций, каждая из которых принимает один аргумент.
 
-function curry(fn) {
+function curry(func) {
 	return function curried(...args) {
-		if (args.length >= fn.length) {
-			return fn.apply(this, args)
+		if (args.length >= func.length) {
+			return func.apply(this, args)
 		} else {
-			return function (...args2) {
-				return curried.apply(this, args.concat(args2))
-			}
+			return curried.bind(this, ...args)
 		}
 	}
 }
